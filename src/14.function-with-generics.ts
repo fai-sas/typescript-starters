@@ -14,6 +14,8 @@
   const resultGeneric2 = createArrayWithGeneric<number>(5)
   const resultGeneric3 = createArrayWithGeneric<boolean>(true)
 
+  console.log({ resultArray, resultGeneric, resultGeneric2, resultGeneric3 })
+
   type User = { id: number; name: string }
 
   const resultGenericObject = createArrayWithGeneric<User>({
@@ -30,6 +32,8 @@
     'Asia',
     { name: 'John', age: 25 }
   )
+
+  console.log(result, result1)
 
   const addCourseToStudent = <T>(student: T) => {
     const course = 'Web Dev'
